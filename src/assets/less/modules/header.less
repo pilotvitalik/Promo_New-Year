@@ -1,0 +1,230 @@
+	nav{
+		background: @headerBackground;
+		div:first-child{
+			div:nth-child(2){
+				&>a{
+					height: 50px;
+					img{
+						width: 44px;
+						height: 100%;
+					}
+					p{
+						color: @addColor;
+						font-family: @headerFont;
+						font-size: 26px;
+						line-height: 50px;
+						font-weight: @mainFontWeight;
+						text-transform: uppercase;
+						letter-spacing: -1.17px;
+					}
+				}
+				ul{
+					li{
+						width: 41px;
+						height: 41px;
+						border-radius: 50%;
+						border: 2px solid #ffffff;
+						.bg-vk{
+							width: 100%;
+							height: 100%;
+						    background: url('../../img/social/socialSprites.png') no-repeat -15px -9px;
+						}
+						.bg-inst{
+						    width: 100%;
+						    height: 100%;
+						    background: url('../../img/social/socialSprites.png') no-repeat -77px -12px;
+						}
+						.bg-facebook{
+						    width: 100%;
+						    height: 100%;
+						    background: url('../../img/social/socialSprites.png') no-repeat -9px -70px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.banner{
+		margin-top: 80px;
+		height: 247px;
+		background: @bannerBackground;
+		@media(max-width: @desktopWidth){
+			height: auto;
+		}
+		@media(max-width: @colBootstap){
+			margin-top: 143px;
+		}
+		&>div{
+			height: 100%;
+			&>.text{
+				height: 127px;
+				&>p{
+					display: inline-block;
+					position: absolute;
+					right: -118%;
+					color: @bannerColor;
+					font-family: @addFont;
+					font-size: 108px;
+					font-weight: @mainFontWeight;
+					line-height: 90px;
+					text-shadow: -2px 5px 0px rgba(255, 255, 255),
+						2px 4px 0px rgba(255, 255, 255),
+						4px 3px 0px rgba(255, 255, 255),
+						0px 1px 0px rgba(255, 255, 255),
+						5px 0px 0px rgba(255, 255, 255),
+						4px -1px 0px rgba(255, 255, 255),
+						3px -3px 0px rgba(255, 255, 255),
+						2px -3px 0px rgba(255, 255, 255),
+						0px -3px 0px rgba(255, 255, 255),
+						-2px -3px 0px rgba(255, 255, 255),
+						-3px 0px 0px rgba(255, 255, 255),
+						-4px 1px 0px rgba(255, 255, 255),
+						-4px 3px 0px rgba(255, 255, 255),
+						0 4px 8px rgba(16,17,17,0.75);
+						@media(max-width: @desktopWidth){
+							font-size: 90px;
+							line-height: 90px;
+						}
+						@media(max-width: @smDesktopWidth){
+							font-size: 70px;
+							line-height: 70px;
+						}
+						@media(max-width: @tableWidth){
+							font-size: 50px;
+							line-height: 50px;
+						}
+						@media(max-width: @colBootstap){
+							left: 0;
+							right: 0;
+							font-size: 50px;
+							line-height: 50px;
+						}
+				}
+				&>p:last-child{
+					right: -70%;
+					top: 85%;
+					@media(max-width: @desktopWidth){
+						top: 65%;
+					}
+					@media(max-width: @smDesktopWidth){
+						top: 55%;
+					}
+					@media(max-width: @tableWidth){
+						top: 45%;
+					}
+					@media(max-width: @colBootstap){
+						right: 0;
+					}
+				}
+			}
+			&>.imgLeft{
+				margin-left: -3%;
+				&>img:first-child{
+					position: absolute;
+					max-width: 100%;
+					height: 100%;
+					top: 0px; 
+					right: 12%;
+				}
+				&>img:last-child{
+					position: absolute;
+					width: 33.25%;
+					height: auto;
+					top: 0px; 
+					right: 10%;
+					@media(min-width: @smDesktopWidth) and (max-width: @desktopWidth){
+						width: 30%;
+						right: 12%;
+					}
+					@media(min-width: @tableWidth) and (max-width: @smDesktopWidth){
+						width: 28%;
+						right: 14%;
+					}
+					@media(min-width: @colBootstap) and (max-width: @tableWidth){
+						width: 28%;
+						right: 10%;
+					}
+					@media(min-width: @iPhone) and (max-width: @colBootstap){
+						max-width: 30%;
+						right: 5%;
+					}
+				}
+			}
+			.imgRight{
+				margin-left: 3%;
+				.snowman{
+					&>img{
+						position: absolute;
+						bottom: 0;
+						right: -33%;
+						z-index: 10;
+						@media(min-width: @smDesktopWidth) and (max-width: @desktopWidth){
+							width: 65%;
+							right: -30%;
+						}
+						@media(min-width: @tableWidth) and (max-width: @smDesktopWidth){
+							width: 60%;
+							right: -30%;
+						}
+						@media(min-width: @colBootstap) and (max-width: @tableWidth){
+							width: 60%;
+							right: -30%;
+						}
+						@media(min-width: @iPhone) and (max-width: @colBootstap){
+							max-width: 120%;
+							right: -20%;
+						}
+					}
+				}
+				.tree{
+					height: 100%;
+					img{
+						width: 180%;
+						height: 100%;
+						margin-left: -80%;
+					}
+					&>.arrow{
+						position: absolute;
+						width: 20.05%;
+						height: auto;
+						top: 54%;
+						right: 17.5%;
+						&>p{
+							display: inline-block;
+							position: absolute;
+							height: 16px;
+							width: 300%;
+							right: -55%;
+							top: 50%;
+							color: @addColor;
+							font-size: 1.8vw;
+							font-family: @addFont;
+							font-weight: @mainFontWeight;
+							line-height: 25px;
+							transform: rotate(270deg);
+							@media(min-width: @tableWidth) and (max-width: @smDesktopWidth){
+								right: -48%;
+								top: 48%;
+							}
+							@media(min-width: @colBootstap) and (max-width: @tableWidth){
+								font-size: 1.8vw;
+								right: -48%;
+								top: 46%;
+							}
+							@media(min-width: @smPhoneWidth) and (max-width: @colBootstap){
+								font-size: 2.1vw;
+								right: -48%;
+								top: 46%;
+							}
+							@media(min-width: @iPhone) and (max-width: @smPhoneWidth){
+								font-size: 2.1vw;
+								right: -41%;
+								top: 43%;
+							}
+						}
+					}
+				}
+			}
+		}
+		
+	}
