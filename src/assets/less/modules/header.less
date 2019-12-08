@@ -152,11 +152,13 @@
 			}
 			.imgRight{
 				margin-left: 3%;
+				height: 100%;
 				.snowman{
 					&>img{
 						position: absolute;
+						height: 60.5%;
 						bottom: 0;
-						right: -33%;
+						right: -30%;
 						z-index: 10;
 						@media(min-width: @smDesktopWidth) and (max-width: @desktopWidth){
 							width: 65%;
@@ -167,11 +169,12 @@
 							right: -30%;
 						}
 						@media(min-width: @colBootstap) and (max-width: @tableWidth){
-							width: 60%;
+							max-width: 100%;
 							right: -30%;
 						}
 						@media(min-width: @iPhone) and (max-width: @colBootstap){
 							max-width: 120%;
+							height: 100%;
 							right: -20%;
 						}
 					}

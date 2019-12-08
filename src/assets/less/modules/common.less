@@ -1,0 +1,287 @@
+.namePromo{
+	height: 100px;
+	margin-top: 65px;
+	margin-bottom: 70px;
+	div:nth-child(2){
+		height: 100%;
+		background: url('../../img/main/item/mainTitleBack.png') no-repeat;
+		background-size: 100% 100%;
+		h2{
+			height: 100%;
+			color: @mainColor;
+			font-family: @mainFont;
+			font-size: 48px;
+			font-weight: @mainFontWeight;
+			line-height: 100px;
+			text-transform: uppercase;
+			letter-spacing: 1.92px;
+			b{
+				color: @promoColor;
+				letter-spacing: 2.5px;
+			}
+		}
+	}
+}
+.listItems{
+	padding-bottom: 80px; // delete
+	&>div:nth-child(2){
+		height: auto;
+		.card{
+			width: 466px;
+			height: 609px;
+			box-shadow: 0 0 15px rgba(16, 17, 17, 0.4);
+			.labelItem{
+				position: absolute;
+				width: 0; 
+				height: 0;
+				top: -15px; 
+				right: -15px;
+				z-index: 100;
+				border-bottom: 87px solid @feedbackBtnBackground;
+				border-right: 87px solid transparent;
+				border-bottom-left-radius: 90%;
+				p{
+					display: inline-block;
+					position: absolute;
+					width: 63px;
+					height: 26px;
+					left: 20px;
+					top: 20px;
+					color: @addColor;
+					font-family: "Arial MT";
+					font-size: 26px;
+					font-weight: bold;
+					line-height: 26px;
+				}
+			}
+			.labelItem:after{
+				content: '';
+				position: absolute;
+				width: 0; 
+				height: 0;
+				left: -15px;
+				z-index: 100;
+				border-bottom: 15px solid #762002;
+				border-left: 15px solid transparent;
+			}
+			.labelItem:before{
+				content: '';
+				position: absolute;
+				width: 0; 
+				height: 0;
+				right: -87px;
+				top: 87px;
+				z-index: 100;
+				border-top: 15px solid #762002;
+				border-right: 15px solid transparent;
+			}
+			.card-header,
+			.card-body{
+				background-color: @itemBackground;
+				border: none;
+			}
+			.card-footer{
+				background: @addColor;
+				height: 82px;
+				border: none;
+				p{
+					width: 100%;
+					height: 18px;
+					color: @itemSocialColor;
+					font-family: @mainFont;
+					font-size: 18px;
+					font-weight: @mainFontWeight;
+					line-height: 18px;
+				}
+				ul{
+					width: 378px;
+					height: 27px;
+					li{
+						width: 27px;
+						height: 27px;
+						border-radius: 50%;
+						background: @socialBackground;
+						.social{
+							display: inline-block;
+							width: 100%;
+							height: 100%;
+							transform: scale(0.8, 0.8);
+						}
+						.bg-vk {
+						    background: url('../../img/social/socialSprites.png') -20px -12px;
+						}
+						.bg-inst {
+						    background: url('../../img/social/socialSprites.png') -82px -16px;
+						}
+						.bg-facebook {
+						    background: url('../../img/social/socialSprites.png') -15px -75px;
+						}
+						.bg-odnoklass {
+						    background: url('../../img/social/socialSprites.png') -12px -137px;
+						}
+						.bg-youtube {
+						    background: url('../../img/social/socialSprites.png') -141px -12.5px;
+						}
+						.bg-linkedIn {
+						    background: url('../../img/social/socialSprites.png') -65px -136px;
+						}
+						.bg-livejournal {
+						    background: url('../../img/social/socialSprites.png') -80px -75px;
+						}
+						.bg-smile {
+						    background: url('../../img/social/socialSprites.png') -122px -132px;
+						}
+						.bg-yandex {
+						    background: url('../../img/social/socialSprites.png') -197px -15px;
+						}
+						.bg-google {
+						    background: url('../../img/social/socialSprites.png') -140px -69px;
+						}
+					}
+				}
+			}
+			.card-header{
+				height: 263px;
+				div:first-child{
+					img{
+						margin-left: 175-186px;
+						margin-top: (263-218)/2px;
+					}
+				}
+				div:last-child{
+					.price{
+						width: 222px;
+						height: 79px;
+						background: @addColor;
+						p:first-child{
+							color: #575757;
+							color: @mainColor;
+							font-family: "Arial MT";
+							font-size: 30px;
+							font-weight: @mainFontWeight;
+							line-height: 30px;
+							text-decoration: line-through;
+						}
+						p:last-child{
+							color: @itemPromoPriceColor;
+							font-family: "Arial MT";
+							font-size: 37px;
+							font-weight: @mainFontWeight;
+							line-height: 37px;
+						}
+					}
+					button:nth-child(2){
+						width: 222px;
+						height: 43px;
+						color: @addColor;
+						font-family: @mainFont;
+						font-size: 24px;
+						font-weight: bold;
+						line-height: 43px;
+						text-transform: uppercase;
+						letter-spacing: 1.35px;
+						background-color: @itemBtnBackground;
+						border: none;
+					}
+					button:nth-child(3){
+						width: 222px;
+						height: 44px;
+						border: 2px solid #e96c41;
+						color: @itemBtnDescriptColor;
+						font-family: @mainFont;
+						font-size: 22px;
+						font-weight: bold;
+						line-height: 44px;
+						letter-spacing: 1.25px;
+						background: @addColor;
+					}
+					a{
+						position: inline-block;
+						width: 222px;
+						height: 15px;
+						color: #ab310c;
+						font-family: Corbel;
+						font-size: 17px;
+						font-weight: @mainFontWeight;
+						line-height: 15px;
+					}
+					a:before{
+						content: '';
+						position: absolute;
+						width: 100%;
+						height: 2px;
+						bottom: 3px;
+						background: url('../../img/main/item/dotttedLine.png') no-repeat;
+					}
+				}
+			}
+			.card-body{
+				height: 262px;
+				h4{
+					width: 100%;
+					height: 61px;
+					color: @mainColor;
+					font-family: @mainFont;
+					font-size: 26px;
+					font-weight: bold;
+					line-height: 29px;
+					letter-spacing: 1px;
+					b:before{
+						content: '';
+						position: absolute;
+						width: 78%;
+						height: 2px;
+						bottom: 293px;
+						background: @mainColor;
+					}
+				}
+				&>.card-text{
+					width: 385px;
+					height: 180px;
+					color: @mainColor;
+					font-family: @mainFont;
+					font-size: 20px;
+					font-weight: @mainFontWeight;
+				}
+			}
+		}
+	}
+}
+.feedback{
+	padding-bottom: 58px;
+	div:nth-child(2){
+		height: 95px; 
+		background: @feedbackBackground;
+		form{
+			height: 100%;
+			label{
+				width: 284px;
+				height: 43px;
+				margin-top: 26px;
+				background: @addColor;
+				input{
+					width: 100%;
+					height: 100%;
+					color: @feedbackInputColor;
+					font-family: @mainFont;
+					font-size: 21px;
+					font-weight: @mainFontWeight;
+					line-height: 43px;
+					border: none;
+				}
+			}
+			button{
+				width: 329px;
+				height: 43px;
+				margin-top: 26px;
+				color: @addColor;
+				font-family: @mainFont;
+				font-size: 21px;
+				font-weight: bold;
+				line-height: 43px;
+				background: @feedbackBtnBackground;
+				border: none;
+			}
+		}
+	}
+}
