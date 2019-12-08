@@ -69,6 +69,15 @@ module.exports = {
            name: '[name].[ext]'
         }
       },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader',
+        options: {
+           name: '[name].[ext]',
+           outputPath: `${PATHS.assets}fonts`,
+           publicPath: `${PATHS.assets}fonts`,
+        }
+      },
     ]
   },
   plugins: [
@@ -84,10 +93,10 @@ module.exports = {
     {
       from: `${PATHS.src}/${PATHS.assets}img`,
       to: `${PATHS.assets}img`
-    }, {
+    },{
       from: `${PATHS.src}/static`,
       to: `${PATHS.assets}static`
-    }, 
+    },
     ])
   ],
 }
